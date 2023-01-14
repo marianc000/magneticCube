@@ -78,7 +78,6 @@ function run() {
     console.log("cubes", cubes);
  
     console.log("cubes2", removeRotations(cubes ));
-    console.log("cubes3", cubes.map(({ path }) => path));
 }
 
 setTimeout(run)

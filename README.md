@@ -1,4 +1,4 @@
-# Hiding text from Ctrl+F in a browser
-There is still no easy way hide a web page contents from find-in-page
+# 480 solutions of the Magic magnetic cube puzzle
+Assembling 3-dimensional shapes into a cube using JavaScript and Three.js
 
-Sample code for post https://marian-caikovski.medium.com/hiding-text-from-ctrl-f-in-a-browser-594e3643c815 assessing inert attribute and CSS properties content or visibility
+Source code for post https://marian-caikovski.medium.com/480-solutions-of-the-magic-magnetic-cube-puzzle-a83df3e74c6 about assembling 3D puzzles
