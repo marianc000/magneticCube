@@ -16,7 +16,7 @@ const components = blocks.map(({ block, color }, i) => {
 
     const piece = makeBlock(block, color, { opacity: 0.5, transparent: true, side: THREE.DoubleSide });
 
-    const light = getLight([3, 4, 5]);
+    const light = getLight([6, 3, 5]);
     const scene = getScene(
         piece,
         light,
@@ -37,16 +37,14 @@ const components = blocks.map(({ block, color }, i) => {
     }
 });
 
-const inputs = [xInput, yInput, zInput];
+// const inputs = [xInput, yInput, zInput];
+// inputs.forEach(i => i.addEventListener('change', adjustLight));
 
-inputs.forEach(i => i.addEventListener('change', adjustLight));
-
-function adjustLight() {
-    const p = inputs.map(i => parseInt(i.value));
-    console.log("adjustLight", p);
-    components.forEach(o => o.light.position.set(...p));
-}
-
+// function adjustLight() {
+//     const p = inputs.map(i => parseInt(i.value));
+//     console.log("adjustLight", p);
+//     components.forEach(o => o.light.position.set(...p));
+// }
 
 function render({ scene, camera, renderer }) {
     if (resizeRendererToDisplaySize(renderer)) {

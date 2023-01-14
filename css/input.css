@@ -16,10 +16,11 @@ canvas {
 
 div#canvasesDiv {
       width: 100%;
-   box-sizing: border-box;
-   flex-wrap: nowrap;
-   align-items: stretch;
-                     text-align: center;
+      box-sizing: border-box;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      text-align: center;
+      margin-top: 3em;
 }
 
 .controls {
@@ -65,4 +66,14 @@ div#canvasesDiv>div>p {
 
 input[type='range'] {
   width: 25%;
+}
+.header {
+   font-size: 1.5em;
+   text-align: center;
+   padding: 0.5em;
+   background-color: white;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1;
 }

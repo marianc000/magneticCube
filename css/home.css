@@ -4,6 +4,7 @@
   
   .container {
     text-align: center;
+    margin-top: 4em;
   }
   
   img {
@@ -132,3 +133,14 @@
     display: block;
     margin: 0.5em;
   }
+
+  .header {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+ }

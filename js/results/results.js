@@ -63,7 +63,6 @@ const components = [...inside3, ...corner3].map(({ path }, i) => {
 
 
 function render({ scene, camera, cube, renderer }, time) {
-  time = time / 3000;
 
   if (resizeRendererToDisplaySize(renderer)) {
     const canvas = renderer.domElement;
@@ -71,8 +70,8 @@ function render({ scene, camera, cube, renderer }, time) {
     camera.updateProjectionMatrix();
   }
 
-  // cube.rotation.x = time;
-  // cube.rotation.y = time; 
+    cube.rotation.x = time/5000;
+    cube.rotation.y = time/3000; 
   //cube.rotation.z = time;
   renderer.render(scene, camera);
 }
