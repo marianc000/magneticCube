@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/input.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./js/lib/three.module.js",
+        "OrbitControls": "./js/lib/OrbitControls.js" 
+      }
+    }
+  </script>
+
+  <script src="js/input/input.js" type="module"></script>
+</head>
+
+<body>
+  <div id="canvasesDiv"> </div>
+  <div class="controls">
+    <input type="number" id="xInput" min="-50" max="50" value="6">
+    <input type="number" id="yInput" min="-50" max="50" value="3">
+    <input type="number" id="zInput" min="-50" max="50" value="5">
+  </div>
+</body>
+
+</html>

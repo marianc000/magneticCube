@@ -1,0 +1,68 @@
+:root {
+   --canvas-size: 21vw;
+ }
+
+html, body {
+   margin: 0;
+   height: 100%;
+   width: 100%;
+}
+canvas {
+    width: 100%;
+  height: 100%;
+      margin: 0;
+  padding: 0;
+}
+
+div#canvasesDiv {
+      width: 100%;
+   box-sizing: border-box;
+   flex-wrap: nowrap;
+   align-items: stretch;
+                     text-align: center;
+}
+
+.controls {
+   text-align: center;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+button {
+   margin: 0 0.5em;
+   font-size: 1.5em;
+}
+
+p#pageP {
+   font-size: 1.3em;
+   margin: 0.2em;
+}
+
+html {
+    font-family: arial;
+}
+
+div#canvasesDiv>div {
+    position: relative;
+    margin: 0;
+    width: var(--canvas-size);
+    height: var(--canvas-size);
+    aspect-ratio: 1;
+                display: inline-block;
+        padding: 0;
+        box-sizing: border-box;
+}
+div#canvasesDiv>div>p {
+    position: absolute;
+    margin:0;
+    text-align:center;
+    width: 100%;
+    bottom: 1em;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type='range'] {
+  width: 25%;
+}

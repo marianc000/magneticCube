@@ -1,0 +1,69 @@
+:root {
+   --canvas-size: 23%;
+}
+
+html,
+body {
+   margin: 0;
+   height: 100%;
+   width: 100%;
+}
+
+canvas {
+   width: 100%;
+   height: 100%;
+}
+
+div#canvasesDiv {
+   margin-top: 3em;
+   width: 100%;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+.controls {
+   text-align: center;
+}
+
+button {
+   margin: 0 0.5em;
+   font-size: 1.5em;
+}
+
+p#pageP {
+   font-size: 1.3em;
+   margin: 0.2em;
+}
+
+html {
+   font-family: arial;
+}
+
+div#canvasesDiv>div {
+   position: relative;
+   margin: 0.5em;
+   width: 23%;
+   aspect-ratio: 1;
+   display: inline-block;
+}
+
+div#canvasesDiv>div>p {
+   position: absolute;
+   margin: 0;
+   text-align: center;
+   width: 100%;
+   bottom: 0;
+   padding: 0.5em;
+   box-sizing: border-box;
+}
+
+.header {
+   font-size: 1.5em;
+   text-align: center;
+   padding: 0.5em;
+   background-color: white;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+}
