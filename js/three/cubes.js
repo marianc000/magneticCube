@@ -8,7 +8,7 @@ export function makeCube(path) {
   const group = new THREE.Group();
 
   path.forEach((o, i) => {
-    const block = getBlock(i, o.rotationIdx);
+    const block = getBlock(o.formIdx, o.rotationIdx);
     block.position.set(o.x * SPREAD, o.y * SPREAD, o.z * SPREAD);
     group.add(block);
   });
